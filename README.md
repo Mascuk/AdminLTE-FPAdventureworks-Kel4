@@ -1,23 +1,23 @@
 # FP_DWO_KELOMPOK_5
-Final Project Pengembangan Data Warehouse dan Dashboard WHsakila2021<br/>
-Dibuat oleh Kelompok 5 <br/>
+Final Project Pengembangan Data Warehouse dan Dashboard Adventureworks<br/>
+Dibuat oleh Kelompok 4 Mata Kuliah Data Warehouse dan OLAP <br/>
 Program Studi Sistem Informasi <br/>
 Fakultas Ilmu Komputer <br/>
 UPN "Veteran" Jawa Timur<br/>
 Nama Ketua :<br/>
-Ahmad Nashirul Haq (18082010028)<br/>
+Dewangga Nanda Arjuna (21082010201)<br/>
 Nama Anggota :<br/>
-Nur Hasan Assobarry (18082010007)<br/>
-Khusnia Nur Rachmah (18082010008)<br/>
+Andhika Rizky Aulia (21082010171)<br/>
+Mirza Khazim Nugraha (21082010181)<br/>
 <br/>
 Langkah-langkah yang dibutuhkan untuk menjalankan app dengan baik :
 1. Install database server: MySql (disini kami menggunakan Xampp versi terbaru).
 2. Install software mysql management: phpMyAdmin dari Xampp (ATAU YG LAIN).
-3. Extract FP_DWO_KELOMPOK_5.zip pada folder htdocs XAMPP (xampp/htdocs).
+3. Extract AdminLTE-FPAdventureworks-Kel4 pada folder htdocs XAMPP (xampp/htdocs).
 4. Jalankan Xampp control panel.
 5. Start apache dan mysql server.
 6. Buka phpMyAdmin (localhost/phpmyadmin).
-7. Buat database dengan nama whsakila2021.
-8. Import file whsakila2021.sql ke dalam database whsakila2021.
-9. Download dan Extract mondrian_18082010028.zip dari link https://bit.ly/mondrianwhsakilaanashaq ke dalam server Tomcat bawaan dari XAMPP (xampp/tomcat/webapps).
-10. Jalankan aplikasi dengan mengakses http://localhost/FP_DataWarehouseSakila2021_18082010028
+7. Buat database dengan nama adventureworks2.
+8. Import file adventureworks2.sql ke dalam database adventureworks2.
+9. Download file yang ada pada folder mondrian ke dalam server Tomcat bawaan dari XAMPP (xampp/tomcat/webapps).
+10. Jalankan dashboard dengan mengakses http://localhost/AdminLTE-FPAdventureworks-Kel4
