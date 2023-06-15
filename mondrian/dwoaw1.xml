@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Schema name="adventureworks2">
+
+<Cube name="Sales" defaultMeasure="SubTotal">
+<Table name="sales_fact"/>
+<Dimension name="Time" foreignKey="time_id">
+<Hierarchy hasAll="true" allMemberName="All Times" primaryKey="time_id">
+<Table name="sales_fact" />
+<Level name="time_id" column="time_id"/>
+      
+</Hierarchy>
+</Dimension>
+<Dimension name="Customer" foreignKey="customer_id">
+<Hierarchy hasAll="true" allMemberName="All Customer" primaryKey="customer_id">
+<Table name="sales_fact" />
+<Level name="customer_id" column="customer_id"/>
+       
+</Hierarchy>
+</Dimension>
+<Dimension name="Employee" foreignKey="employee_id">
+<Hierarchy hasAll="true" allMemberName="All Employee" primaryKey="employee_id">
+<Table name="sales_fact" />
+<Level name="employee_id" column="employee_id"/>
+       
+</Hierarchy>
+</Dimension>
+<Dimension name="Product" foreignKey="product_id">
+<Hierarchy hasAll="true" allMemberName="All product" primaryKey="product_id">
+<Table name="sales_fact" />
+<Level name="product_id" column="product_id" uniqueMembers="true"/>
+        
+</Hierarchy>
+</Dimension>
+<Measure name="SubTotal" column="sub_total" aggregator="sum" formatString="$#,###.00"/>
+<Measure name="LineTotal" column="line_total" aggregator="sum" formatString="$#,###.00"/>
+<Measure name="OrderQty" column="order_qty" aggregator="sum" />
+</Cube>
+</Schema>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Schema name="adventureworks2">
+
+<Cube name="Ship" defaultMeasure="TotalDue">
+<Table name="shipment_fact"/>
+
+<Dimension name="Shipment" primaryKeyKey="shipmentfactID">
+<Hierarchy hasAll="true" allMemberName="All Shipment">
+<Table name="shipment_fact" />
+<Level name="shipmentfactID" column="shipmentfactID"/>
+</Hierarchy>
+</Dimension>
+
+<Dimension name="Time" foreignKey="time_id">
+<Hierarchy hasAll="true" allMemberName="All Times" primaryKey="time_id">
+<Table name="shipment_fact" />
+<Level name="time_id" column="time_id"/>
+       
+</Hierarchy>
+</Dimension>
+<Dimension name="Method" foreignKey="shipmentmethodID">
+<Hierarchy hasAll="true" allMemberName="All Method" primaryKey="shipmentmethodID">
+<Table name="shipment_fact" />
+<Level name="shipmentmethodID" column="shipmentmethodID"/>
+       
+</Hierarchy>
+</Dimension>
+<Dimension name="Freight" foreignKey="Freight">
+<Hierarchy hasAll="true" allMemberName="All Freight" primaryKey="Freight">
+<Table name="shipment_fact" />
+<Level name="Freight" column="Freight" uniqueMembers="true"/>
+        
+</Hierarchy>
+</Dimension>
+<Measure name="TotalDue" column="TotalDue" aggregator="sum" formatString="$#,###.00"/>
+</Cube>
+</Schema>
