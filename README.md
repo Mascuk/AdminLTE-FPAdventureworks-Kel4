@@ -1,4 +1,4 @@
-# FP_DWO_KELOMPOK_4
+# FP_DWO_KELOMPOK_4 
 Final Project Pengembangan Data Warehouse dan Dashboard Adventureworks<br/>
 Dibuat oleh Kelompok 4 Mata Kuliah Data Warehouse dan OLAP <br/>
 Program Studi Sistem Informasi <br/>
@@ -11,8 +11,8 @@ Andhika Rizky Aulia (21082010171)<br/>
 Mirza Khazim Nugraha (21082010181)<br/>
 <br/>
 Langkah-langkah yang dibutuhkan untuk menjalankan app dengan baik :
-1. Install database server: MySql (disini kami menggunakan Xampp versi terbaru).
-2. Install software mysql management: phpMyAdmin dari Xampp (ATAU YG LAIN).
+1. Install database server: MySql.
+2. Install software mysql management: phpMyAdmin dari Xampp.
 3. Extract AdminLTE-FPAdventureworks-Kel4 pada folder htdocs XAMPP (xampp/htdocs).
 4. Jalankan Xampp control panel.
 5. Start apache dan mysql server.
